@@ -1,0 +1,56 @@
+June 20th
+
+
+
+
+
+
+
+
+Runs: 
+
+
+Shot1:
+-plasma conditions: plasma shot, good traces
+- strange beat frequency thing
+
+Shot2: 
+-plasma conditions: plasma shot, good traces
+-same as 1
+ 
+shot3: 
+-plasma conditions: plasma, 
+-Changed scale to be negative
+
+
+
+shot4: 
+-plasma conditions: plasma, lower density 
+-Changed scale to be negative
+
+shot5: 
+-plasma conditions: plasma, lower density 
+-Changed scale to be positive
+-locking on to a low value, dont know why, possibly the amp is not giving what I requested and is causing the lock to go off
+
+Shot6:
+-plasma conditions: plasma, 10 Hz fluctuation
+-increasing aquisition time
+
+Shot7:
+-plasma conditions: plasma, 40 Hz fluctuation
+-Can see wiggle, calculates transient values to start, works its way to very locked
+
+Shot8:
+-plasma conditions: plasma, increased density
+-remained very locked at low temperature
+
+Shot9:
+-plasma conditions: back to lower power
+-removed capacitive coupling
+
+shot10:
+- RF no plasma
+
+shot11:
+- Everything off

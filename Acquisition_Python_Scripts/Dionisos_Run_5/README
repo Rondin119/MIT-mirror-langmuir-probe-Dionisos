@@ -1,0 +1,39 @@
+This folder contains all current control and calibration Scripts used in the MLP Dionosis tests.
+
+in PWD/Run_Scripts the file to run the MLP in normal opperation and for calibration of inputs is MLP_test_script, to run output calibration run MLP_test_script_calibration_out.py.
+
+How to run input calibration:
+
+turn on claibration mode in the MLP_test_script file by setting const_switch(2). Simultaniously measure the output of a function generator with RP and Scope. Coppy both files to the calibration directory and run the file Calibration_in in matlab making sure to change the file call names at the top of Calibration_in. Depending on the save format of the scope it may be necessary to mess with the readcsv command. The offset is provided as an output of the script, however the scale must be found manuely by adjusting mlp_scale near the bottom of the script. These values must be added to the MLP_test_script file.
+
+How to run output calibration:
+
+Run the script MLP_test_script_calibration_out. It outputs a series of constant voltages that must be saved by a scope. Copy the CSV to the calibration directory and run calibation_out. fiddle with the averaging in the file until you have 5 points that form a line. Using the manuel fitting function in matlab find the equation of the resultent line. This line gives you the values for offset and scale (warning the order you plot in matters substantially make sure to run this calibration twice to make sure it is plotted correctly and you are interpriting th eoutput correctly)
+
+Input 1: Plasma Current
+Input 2: Loop Back Bias (Probe Bias)
+
+Output 1&2: Bias driving
+
+Notes on issues to resolve: Currently there is currently missmatch between the recorded probe voltage and what is coming out of the RF amplifier. Ted thinks this is due to ground loops. It is my hope it is this mismatch that is throwing off the alogorithm. I also want to know what the smoothed values of current and Bias are instead of the raw values, this may elucitadate why the agorithm does not work. I also want to save directly the Bias and current used for each calculation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

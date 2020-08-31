@@ -1,0 +1,119 @@
+Notes for Sep 17 run day for MLP Testing
+The major diffrence between this set of tests and the last one is the increase in the smothing averager window and increased data save rate.
+
+Calibration for Rp1:
+there was an issue with the calibration scripts that needed to be diagnosed, I removed the vast majority of the break point architectre and it worked so I am not questioning it. I suspect it is likely due to the increased sample rate, or higher speed calibration, but I am ot sure. Regardless I am now confident that Rp 1 is correctly calibrated with values:
+
+MLP_driver.set_scale_PC(int(-1.1*1024))
+MLP_driver.set_offset_PC(int(int2signed(-95), 2))
+
+MLP_driver.set_scale_LB(int(1.1*1024))
+MLP_driver.set_offset_LB(int(int2signed(136), 2))
+
+MLP_driver.set_scale_Out(int(.97*1024))
+MLP_driver.set_offset_Out(int(int2signed(-5), 2))
+
+The input callibration was done by inputing a 20kHz 1.5 volt peak to peak signal to both the rp and an ocilliscope. The two measurements were then plotted in matlab. We assume that the scope is reading the "true" signal accuratly. This gives us a dc offset and amplitude discrepencey that can be accounted for via the manual calibration blocks in the FPGA.
+
+
+Scope Channel setup:
+CH1: RF Monitor
+Ch2: Card Bias Reading
+CH3: Card Current Reading
+
+
+Runs: 
+
+
+Shot1:
+-plasma conditions: medium to hi
+-scope file name: 22All
+
+Shot2:
+-plasma conditions: little bit lower mode
+-scope file name: 23 ALL
+
+Shot3:
+-plasma conditions: Same as before reverse IP
+-scope file name: 24 ALL
+
+Shot4:
+-plasma conditions: Return to higher mode
+-scope file name: 25 All
+
+Shot5:
+-plasma conditions: Highest mode
+-scope file name: 26 All
+
+Shot6:
+-plasma conditions: Lower RF power
+-scope file name: 27 All
+
+
+Shot7:
+-plasma conditions: repeat
+-scope file name:28_all
+
+Shot8:
+-plasma conditions: Revesers Ip the signal is jumping around allot
+-scope file name: 29 All
+
+Shot9:
+-plasma conditions:Back to Higher Power
+-scope file name: 30 All
+
+Shot10:
+-plasma conditions: We slowly increased the RF power until it quited down (redone
+)
+-scope file name: 33 ALL 830W, 200 AMps, 2.5*10^-2
+
+
+Shot11:
+-plasma conditions: We continued to increase It seems to be locking on to somethings 
+-scope file name: 32 ALL
+
+Shot 12 Redo of 10
+34 ALL
+
+Shot 13 No power
+35 ALL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

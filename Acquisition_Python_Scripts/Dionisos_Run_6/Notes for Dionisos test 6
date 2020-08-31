@@ -1,0 +1,102 @@
+Aug 15th
+
+
+This is mostly a repeat of the last set of tests. I believe the last set of tests failed due to a divide by two caused by a 50 ohm terminator. This should be easily resolved by either removing it, or by adding a multiply by 2 in the calibration block which can be done by doubling the calibration number. While no major changes have occured in the logic, a number of smaller changes have occured. A bug was fixed that caused the first bias state to update be the one that was already calculating when the trigger arrived. The order in which data is saved is more throughly defined helping for ease of interpritation. There was also a fairly major issue in the VF calculation that was causing it to bounce up and down. That has been fixed
+
+
+The plan for this test is as follows:
+
+Step 1: Run several plasmaless shots with the full setup to ensure that the save agrees with the expected output.
+
+Step 2: Run constant plasma parameter shots at diffrent conditions
+
+Step 3: Run several ociliatory plasma shots
+
+
+
+
+
+
+
+Runs: 
+
+Shot1: 
+-plasma conditions: 
+-Result: 
+
+Shot2: 
+-plasma conditions: 
+-Result: 
+
+Shot3: 
+-plasma conditions: 
+-Result: 
+
+Shot4: 
+-plasma conditions: 
+-Result: 
+
+Shot5: 
+-plasma conditions: 
+-Result: 
+
+Shot6: 
+-plasma conditions: 
+-Result: 
+
+Shot7: 
+-plasma conditions: 
+-Result:
+
+Shot8: 
+-plasma conditions: 
+-Result: 
+
+Shot9: 
+-plasma conditions: 
+-Result: 
+
+Shot10: 
+-plasma conditions: 
+-Result: 
+
+Shot11: 
+-plasma conditions: 
+-Result: 
+
+Shot12: 
+-plasma conditions: 
+-Result: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
